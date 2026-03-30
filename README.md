@@ -7,28 +7,28 @@ This project focuses on modeling and forecasting financial market volatility usi
 - Evaluate
 ## ARCH Model
 ARCH (Auto-regressive Conditional Heteroskedastic) model captures volatility clustering by modeling current variance as a function of past squared shocks, allowing volatility to change over time. It is not used in industry as better models exist
-Limitations:
+##### Limitations:
 - Does not capture long term memory effiently
 - Has no memory of past volatility
 ## GARCH Model
 GARCH (Generalized Auto-regressive Conditional Heteroskedastic) Model is an improved version and industry standard for volatility modelling. It uses past shocks as well as past volatility to capture persistence with fewer parameters or lags. It is used along with advanced model as a standard model to gain accurate volatility modelling
-Limitations:
+##### Limitations:
 - Inability to model asymmetry, fat tails, regime shifts, and forward-looking market expectations, making them insufficient on their own for modern financial modeling.
-Used by:
+##### Used by:
 - Hedge funds
 - Quant funds
 - Risk modeling teams
-When chosen:
+##### When chosen:
 - Medium-frequency strategies
 - Volatility forecasting
 - Stress testing
 ## EWMA Model
 EWMA (Exponential Moving Average) Model is a simple model that gives more weightage to recent observation and less weightage to older observations. It uses past shocks as well as past volatility for modelling.
-Used by:
+##### Used by:
 - Banks (Basel frameworks)
 - Asset managers
 - Risk engines (daily VaR)
-When chosen:
+##### When chosen:
 - When volatility is very high and GARCH model fails
 - Need real-time updates
 - Large portfolios
